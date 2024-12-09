@@ -4,16 +4,23 @@ import { FaRegHeart, FaUser } from "react-icons/fa";
 import { IoCart, IoSearch } from "react-icons/io5";
 import { MdCancel } from "react-icons/md";
 import { CiMenuFries } from "react-icons/ci";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false); // State for Hamburger Menu
 
   return (
-    <header className="bg-white max-w-[1440px] mx-auto shadow-md py-4 sticky top-0">
+    <header className="bg-white max-w-[1440px] mx-auto shadow-md py-4 sticky top-0 z-20">
       <div className="container mx-auto flex justify-between items-center px-4">
         {/* Logo */}
-        <div className="text-xl font-bold">Furniro</div>
+        <div className="text-xl font-bold flex ">
+        <Image src={'/images/logo.png'}
+    alt='blog icon'
+    width={185}
+    height={41}
+    loading='lazy'/>
+          </div>
 
         {/* Navigation - Hidden on small screens */}
         <nav className="hidden md:flex space-x-6">
@@ -54,7 +61,7 @@ export default function Header() {
 
       {/* Mobile Navigation - Toggleable */}
       {isOpen && (
-        <div className="md:hidden bg-gray-100 py-4 px-4 space-y-2">
+        <div className="md:hidden w-screen bg-white py-4 px-4 space-y-2 fixed top-12 left-0">
           <Link href="/" className="block text-gray-700 hover:text-yellow-600">
             Home
           </Link>
