@@ -6,7 +6,7 @@ interface button{
 }
 function Button({text,bgcolor,textcolor}:button) {
   return (
-    <button className={`py-2 px-3 ${bgcolor} ${textcolor}`}>
+    <button className={`py-3 px-4 ${bgcolor} ${textcolor} text-[24px] font-bold`}>
         {text}
 
     </button>

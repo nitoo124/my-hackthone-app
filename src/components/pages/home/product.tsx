@@ -1,25 +1,69 @@
-import React from 'react'
-import Image from 'next/image'
-import { data } from '@/products/products'
+import React from 'react';
+import Image from 'next/image';
+import Button from '@/components/global/button';
 import { MdCompareArrows } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import { IoShareSocial } from "react-icons/io5";
-import Button from '@/components/global/button';
 
-function Shop() {
 
-    return (
-        <section className="max-w-[1440px] mx-auto px-4 py-8">
+
+
+const products = [
+  {
+    img: '/images/shop/aboutimages/image1.png',
+    name: 'Syltherine',
+    price: 'Rp 2.500.000',
+  },
+  {
+    img: '/images/shop/aboutimages/image2.png',
+    name: 'Leviosa',
+    price: 'Rp 7.000.000',
+  },
+  {
+    img: '/images/shop/aboutimages/image3.png',
+    name: 'Lolito',
+    price: 'Rp 6.000.000',
+  },
+  {
+    img: '/images/shop/aboutimages/image4.png',
+    name: 'Reepior',
+    price: 'Rp 4.000.000',
+  },
+  {
+    img: '/images/product5.png',
+    name: 'Syltherine',
+    price: 'Rp 2.500.000',
+  },
+  {
+    img: '/images/product6.png',
+    name: 'Leviosa',
+    price: 'Rp 7.000.000',
+  },
+  {
+    img: '/images/product7.png',
+    name: 'Lolito',
+    price: 'Rp 6.000.000',
+  },
+  {
+    img: '/images/product8.png',
+    name: 'Reepior',
+    price: 'Rp 4.000.000',
+  },
+];
+
+const ProductSection = () => {
+  return (
+    <section className="max-w-[1440px] mx-auto px-4 py-8">
       <h2 className="text-[32px] font-bold text-center mb-4">Our Products</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        {data.map((product, index) => (
+        {products.map((product, index) => (
           <div
             key={index}
             className="relative group bg-white shadow-md rounded-lg overflow-hidden"
           >
             {/* Image */}
             <Image
-              src={product.image}
+              src={product.img}
               alt={product.name}
               width={300}
               height={300}
@@ -64,8 +108,7 @@ function Shop() {
         ))}
       </div>
     </section>
+  );
+};
 
-    )
-}
-
-export default Shop
+export default ProductSection;

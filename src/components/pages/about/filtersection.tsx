@@ -10,7 +10,7 @@ function Filtersection() {
       <div className='flex flex-col md:flex-row gap-4 items-center w-full md:w-auto mb-4 md:mb-0'>
         <div className='flex gap-3 items-center'>
           <Image 
-            src={"/images/about/about-icons/Vector.png"} 
+            src={"/images/shop/about-icons/Vector.png"} 
             alt='filter' 
             width={25} 
             height={1} 

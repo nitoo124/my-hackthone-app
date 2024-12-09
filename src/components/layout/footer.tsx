@@ -11,8 +11,8 @@ const poppins = Poppins({
 const Footer = () => {
   return (
     <main>
-    // Footer container with padding and a fixed height
-    <footer className=' max-w-[1440px] mx-auto h-[505px] px-[40px] md:px-[100px] py-[48px]'>
+    {/* // Footer container with padding and a fixed height */}
+    <footer className=' max-w-[1440px] mx-auto  px-[40px] md:px-[100px] py-[48px]'>
       {/* Main content container with a fixed height */}
       <div className='h-[419px]'>
 
