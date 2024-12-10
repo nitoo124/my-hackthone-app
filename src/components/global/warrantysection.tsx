@@ -42,7 +42,7 @@ function Warrantysection() {
     {/* free shipping section */}
     <div className='px-2 flex flex-col items-center md:flex-row gap-4'>
         <Image 
-            src='/images/shop/abouticons/vector.png'
+            src='/images/shop/abouticons/freeshiping.png'
             alt='icon'
             width={40}
             height={40}

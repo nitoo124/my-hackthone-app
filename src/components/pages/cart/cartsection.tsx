@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function CartSection() {
   return (
-    <main className="max-w-[1440px] mx-auto px-4 py-10">
+    <main className="md:max-w-[1440px] w-screen mx-auto px-4 py-10">
     {/* Main container */}
     <div className="flex flex-col lg:flex-row gap-10">
       {/* Left Section: Cart Items */}
