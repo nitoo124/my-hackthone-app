@@ -23,7 +23,7 @@ export default function Header() {
           </div>
 
         {/* Navigation - Hidden on small screens */}
-        <nav className="hidden md:flex space-x-6">
+        <nav className="hidden md:flex space-x-6 px-3">
           <Link href="/" className="text-gray-700 hover:text-yellow-600 text-[16px]">
             Home
           </Link>
@@ -39,11 +39,13 @@ export default function Header() {
         </nav>
 
         {/* Icons */}
-        <div className="flex items-center space-x-4 gap-5 pr-10">
+        <div className="hidden md:block ">
+          <div className="flex items-center space-x-4 gap-5 pr-10 ">
           <FaUser size={20} />
           <IoSearch size={20} />
           <FaRegHeart size={20} />
          <Link href='/cart'><IoCart size={20} /></Link>
+         </div>
         </div>
 
         {/* Hamburger Menu - Visible on small screens */}
@@ -75,8 +77,18 @@ export default function Header() {
             Contact
           </Link>
 
-        
+            {/* Icons */}
+        <div className="block md:hidden  ">
+          <div className="flex items-center space-x-4 gap-5  py-8 ">
+          <FaUser size={20} />
+          <IoSearch size={20} />
+          <FaRegHeart size={20} />
+         <Link href='/cart'><IoCart size={20} /></Link>
+         </div>
         </div>
+
+        </div>
+        
       )}
     </header>
   );

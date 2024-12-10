@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { MdDelete } from "react-icons/md";
 import Pagesbutton from "@/components/global/pagesbutton";
+import Link from "next/link";
 
 function CartSection() {
   return (
@@ -88,9 +89,9 @@ function CartSection() {
           </span>
         </div>
         <div className="flex justify-center mt-6">
-          <button className="w-full lg:w-[222px] border-4 border-black p-3 rounded-lg text-center transition duration-300">
+          <Link href={'/checkout'}><button className="w-full lg:w-[222px] border-4 border-black p-3 rounded-lg text-center transition duration-300 hover:border-none hover:bg-[#B88E2F] hover:text-white">
             Checkout
-          </button>
+          </button></Link>
         </div>
       </div>
     </div>

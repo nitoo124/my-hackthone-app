@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Button from '@/components/global/button';
 import { MdCompareArrows } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
@@ -107,6 +108,14 @@ const ProductSection = () => {
           </div>
         ))}
       </div>
+
+      <div className="flex justify-center mt-8">
+ <Link href={'/shop'}> <button className="w-full border-4 text-center border-[#B88E2F] text-[#B88E2F] py-3 md:w-[245px] rounded-lg mt-6 hover:bg-[#857d6c] hover:text-white hover:border-none">
+    See More
+  </button></Link>
+</div>
+
+
     </section>
   );
 };
