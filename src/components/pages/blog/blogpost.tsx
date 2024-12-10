@@ -55,7 +55,7 @@ export default function Blog() {
   
     return (
       <div className=" min-h-screen  max-w-[1440px] mx-auto mt-10  ">
-        <div className=" px-10 grid grid-cols-1 md:grid-cols-3 gap-10 max-w-[1163px] mx-auto  ">
+        <div className=" px-10 grid grid-cols-1 md:grid-cols-3 gap-10  mx-auto  ">
           {/* Left Side: Blog Posts */}
           <div className="col-span-2 pb-5">
             {blogs.map((blog, index) => (
@@ -96,7 +96,7 @@ export default function Blog() {
           </div>
   
           {/* Right Side: Sidebar */}
-          <div className="bg-white shadow-md rounded-lg px-8 w-[393px] mx-8">
+          <div className="bg-white shadow-md rounded-lg px-8    ">
             {/* Search Bar */}
             <div className=" relative">
               <input
@@ -123,7 +123,7 @@ export default function Blog() {
             </div>
   
             {/* Recent Posts */}
-            <div>
+            <div className="">
               <h3 className="text-xl font-bold mb-4">Recent Posts</h3>
                   
                <div>

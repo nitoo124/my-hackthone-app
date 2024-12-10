@@ -63,7 +63,7 @@ export default function Header() {
 
       {/* Mobile Navigation - Toggleable */}
       {isOpen && (
-        <div className="md:hidden w-screen bg-white py-4 px-4 space-y-2 fixed top-12 left-0">
+        <div className="md:hidden w-screen bg-white py-4 px-4 space-y-2 fixed top-[60px] left-0">
           <Link href="/" className="block text-gray-700 hover:text-yellow-600">
             Home
           </Link>
